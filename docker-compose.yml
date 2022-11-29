@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  database:
+    container_name: postgres_java-graphql
+    image: postgres:12
+    environment:
+      POSTGRES_USER: java-graphql
+      POSTGRES_PASSWORD: java-graphql
+    ports:
+      - "5432:5432"
